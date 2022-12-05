@@ -1,0 +1,113 @@
+{
+	"info": {
+		"_postman_id": "be8a747c-8e2c-4b2c-a1c7-562858276d7f",
+		"name": "Bootcampers",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12122195"
+	},
+	"item": [
+		{
+			"name": "Get all",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{uri}}/bootcampers",
+					"host": [
+						"{{uri}}"
+					],
+					"path": [
+						"bootcampers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\":\"Mariela\"}"
+				},
+				"url": {
+					"raw": "{{uri}}/bootcampers",
+					"host": [
+						"{{uri}}"
+					],
+					"path": [
+						"bootcampers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get by name",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{uri}}/bootcampers/PEDRO",
+					"host": [
+						"{{uri}}"
+					],
+					"path": [
+						"bootcampers",
+						"PEDRO"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "uri",
+			"value": "http://localhost:9000",
+			"type": "string"
+		}
+	]
+}
